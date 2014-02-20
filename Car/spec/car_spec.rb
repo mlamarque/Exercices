@@ -67,58 +67,58 @@ describe Car do
   end
 end
 
-describe Parking do
-  describe "#init" do
-    it "should init a parking" do
-      @parking = Parking.new
-      @parking.cars.should be_empty
-    end
-  end
-end
-
-
-describe Ford do
-  describe "#init" do
-    it "should init a brand" do
-      ford = Ford.new
-      ford.brand.should be == "Ford"
-    end
-  end
-  
-  describe "#module driver" do
-    it "should load driver module" do
-      Ford.ancestors.should include Driver
-    end
-  end
-  describe "#add_driver" do
-    it "should add a driver" do
-      ford = Ford.new
-      ford.has_driver?.should be_false
-      ford.add_driver
-      ford.has_driver?.should be_true
-    end
-  end
-  
-end
-
-describe Renault do
-  describe "#init" do
-    it "should init a brand" do
-      renault = Renault.new
-      renault.brand.should be == "Renault"
-    end
-  end
-  describe "#module driver" do
-    it "should load driver module" do
-      Ford.ancestors.should include Driver
-    end
-  end
-  describe "#add_driver" do
-    it "should add a driver" do
-      renault = Renault.new
-      renault.has_driver?.should be_false
-      renault.add_driver
-      renault.has_driver?.should be_true
-    end
-  end
-end
+# describe Parking do
+#   describe "#init" do
+#     it "should init a parking" do
+#       @parking = Parking.new
+#       @parking.cars.should be_empty
+#     end
+#   end
+# end
+# 
+# 
+# describe Ford do
+#   describe "#init" do
+#     it "should init a brand" do
+#       ford = Ford.new
+#       ford.brand.should be == "Ford"
+#     end
+#   end
+#   
+#   describe "#module driver" do
+#     it "should load driver module" do
+#       Ford.ancestors.should include Driver
+#     end
+#   end
+#   describe "#add_driver" do
+#     it "should add a driver" do
+#       ford = Ford.new
+#       ford.has_driver?.should be_false
+#       ford.add_driver
+#       ford.has_driver?.should be_true
+#     end
+#   end
+#   
+# end
+# 
+# describe Renault do
+#   describe "#init" do
+#     it "should init a brand" do
+#       renault = Renault.new
+#       renault.brand.should be == "Renault"
+#     end
+#   end
+#   describe "#module driver" do
+#     it "should load driver module" do
+#       Ford.ancestors.should include Driver
+#     end
+#   end
+#   describe "#add_driver" do
+#     it "should add a driver" do
+#       renault = Renault.new
+#       renault.has_driver?.should be_false
+#       renault.add_driver
+#       renault.has_driver?.should be_true
+#     end
+#   end
+# end

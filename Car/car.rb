@@ -18,9 +18,8 @@ class Parking
   end
   
 end
+
 class Car
-  extend Driver
-  include Driver
 
   attr_accessor :nb_stop
   attr_accessor :passengers
