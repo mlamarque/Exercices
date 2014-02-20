@@ -1,0 +1,10 @@
+<ul>
+  <% @posts.each do |post|%>
+    <li>
+      <p><%= post.title %> - <%= post.created_at%></p>
+        
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New", new_post_url(:coucou => "test") %>
